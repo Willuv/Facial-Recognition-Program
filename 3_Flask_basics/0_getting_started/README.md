@@ -1,3 +1,0 @@
-### Training Face Recognition Model
-
-
