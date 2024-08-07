@@ -24,7 +24,6 @@ def genderapp():
         pred_image, predictions = faceRecognitionPipeline(path)
         pred_filename = 'prediction_image.jpg'
         cv2.imwrite(f'./static/predict/{pred_filename}',pred_image)
-        print(predictions)
         
         # generate report
         report = []
@@ -45,5 +44,6 @@ def genderapp():
                            eig_image_name,
                            gender_name,
                            score])
-
-    return render_template('gender.html') # GET REQUEST
+        return render_template('gender.html',fileupload=True,report=report) # POST REQUEST
+    
+    return render_template('gender.html',fileupload=False) # GET REQUEST
