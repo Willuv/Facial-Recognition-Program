@@ -78,10 +78,6 @@ The Flask web application provides a simple interface to upload an image and get
 - **/app/**: The main application interface.
 - **/app/gender/**: Endpoint for gender classification.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Acknowledgments
 
 - OpenCV for providing the Haar Cascade classifier.
